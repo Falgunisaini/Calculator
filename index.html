@@ -1,0 +1,41 @@
+<html>
+    <head></head>
+        <title>Calculator</title>
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="1.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h2>Calculator</h2>
+                 </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label for="first" id="label1">Enter First Number:</label>
+                            <input class="form-control" name="firstInput" id="first"/><br/>
+                        </div>
+                        <div class="col-md-10">
+                            <label for="second" id="label2">Enter Second Number:</label>
+                            <input class="form-control" name="secondInput" id="second"/>
+                        </div>
+                    </div>
+                    
+                    <p id="output"></p>
+
+                    <button class="btn btn-lg" onClick="calc('add')">+</button>
+                    <button class="btn btn-lg" onClick="calc('sub')">-</button>
+                    <button class="btn btn-lg" onClick="calc('mul')">*</button>
+                    <button class="btn btn-lg" onClick="calc('div')">/</button>
+                    <button class="btn btn-lg" onClick="calc('mod')">%</button>
+                    <button class="btn btn-lg" type="reset" onClick="clearField()">CLEAR</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
